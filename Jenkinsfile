@@ -2,11 +2,17 @@ pipeline{
    
     agent any
 
+    environment{
+
+        MY_NAME = 'ASHRAF'
+    }
+
     stages {
         
         stage("build"){
             steps{
                 echo 'Building your project...'
+                echo "My name is ${MY_NAME}"
             }
             
         }
